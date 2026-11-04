@@ -1,23 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta
+      name="description"
+      content="Discover the magic of photography at Focus.Frame. Explore our courses, meet our mentors, and develop your own photographic style."
+    />
+    <meta name="theme-color" content="#121212" />
+    <title>Focus.Frame — Photography School</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <load src="./partials/header.html" />
+    <main id="main-content" tabindex="-1">
+      <load src="./partials/hero.html" />
+      <load src="./partials/about-us.html" />
+      <load src="./partials/courses.html" />
+      <load src="./partials/mentors.html" />
+      <load src="./partials/sign-up.html" />
+      <load src="./partials/reviews.html" />
     </main>
-
     <load src="./partials/footer.html" />
-
     <script type="module" src="./main.js"></script>
   </body>
 </html>

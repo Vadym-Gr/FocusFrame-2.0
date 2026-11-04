@@ -1,0 +1,24 @@
+:root {
+  color-scheme: dark;
+
+  --color-background: #121212;
+  --color-surface: #1d1d1d;
+  --color-text: #fff;
+  --color-accent: #bea69e;
+  --color-text-muted: rgb(255 255 255 / 70%);
+  --color-border: rgb(255 255 255 / 20%);
+  --color-border-active: rgb(255 255 255 / 50%);
+  --gradient-card: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+
+  --font-family: 'DM Sans Variable', Arial, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --radius-control: 12px;
+  --radius-card: 20px;
+  --radius-pill: 1000px;
+  --section-gap: 80px;
+  --transition-duration: 200ms;
+  --transition-easing: ease;
+}
