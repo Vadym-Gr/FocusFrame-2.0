@@ -71,8 +71,16 @@
   left: -20px;
 }
 
+.carousel-previous span {
+  transform: translateX(-5px);
+}
+
 .carousel-next {
   right: -20px;
+}
+
+.carousel-next span {
+  transform: translateX(5px);
 }
 
 .carousel-control:disabled {
