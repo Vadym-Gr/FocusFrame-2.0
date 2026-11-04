@@ -1,0 +1,291 @@
+.hero {
+  position: relative;
+  z-index: 0;
+  padding-top: 20px;
+  padding-bottom: var(--section-gap);
+}
+
+.hero::before {
+  position: absolute;
+  z-index: -1;
+  inset: -70px 0 0;
+  content: '';
+  pointer-events: none;
+  background-image: url('../img/hero/grid-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 499px 100%;
+}
+
+.hero-card {
+  padding: 40px 20px 0;
+  overflow: hidden;
+  border-radius: 30px;
+  background-color: var(--color-surface);
+}
+
+.hero-title {
+  font-size: 40px;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.hero-title em {
+  font-weight: var(--font-weight-regular);
+  color: var(--color-accent);
+}
+
+.hero-description {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+}
+
+.hero-social-proof {
+  display: flex;
+  gap: clamp(12px, calc(100vw - 335px), 40px);
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.hero-students {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.student-portraits {
+  display: flex;
+  width: 109px;
+}
+
+.student-portraits img {
+  width: 100%;
+  height: auto;
+}
+
+.student-portraits picture {
+  position: relative;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+}
+
+.student-portraits picture + picture {
+  margin-left: -12px;
+}
+
+.student-portraits picture:first-child {
+  z-index: 2;
+}
+
+.student-portraits picture:nth-child(2) {
+  z-index: 1;
+}
+
+.student-caption {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+}
+
+.student-caption > span {
+  width: 67px;
+}
+
+.hero-reviews {
+  display: flex;
+  flex-shrink: 0;
+  gap: 12px;
+  align-items: center;
+}
+
+.review-star {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+
+.review-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+}
+
+.review-caption > span {
+  color: rgb(255 255 255 / 50%);
+}
+
+.review-caption strong {
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+}
+
+.hero-students,
+.hero-reviews {
+  transition: opacity var(--transition-duration) var(--transition-easing);
+}
+
+.hero-students:hover,
+.hero-reviews:hover {
+  opacity: 0.75;
+}
+
+.hero-photographer {
+  display: block;
+  width: 259px;
+  max-width: 100%;
+  margin: 31px auto 0;
+}
+
+.hero-photographer img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .hero-social-proof {
+    gap: 40px;
+  }
+  .hero {
+    padding-top: 40px;
+  }
+
+  .hero::before {
+    top: -80px;
+    background-image: url('../img/hero/grid-tablet.svg');
+    background-size: 768px 100%;
+  }
+
+  .hero-card {
+    padding: 64px 32px 0;
+  }
+
+  .hero-title {
+    max-width: 517px;
+    font-size: 60px;
+    line-height: 64px;
+  }
+
+  .hero-description {
+    max-width: 418px;
+  }
+
+  .hero-students {
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    height: 56px;
+  }
+
+  .student-portraits {
+    width: 137px;
+  }
+
+  .student-portraits picture {
+    width: 54px;
+    height: 54px;
+  }
+
+  .student-portraits picture + picture {
+    margin-left: -13px;
+  }
+
+  .student-caption {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .student-caption > span {
+    width: 82px;
+  }
+
+  .review-star {
+    width: 50px;
+    height: 50px;
+  }
+
+  .review-caption {
+    gap: 8px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .hero-photographer {
+    width: 393px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero {
+    padding-top: 80px;
+  }
+
+  .hero::before {
+    background-image: url('../img/hero/grid-desktop.svg');
+    background-size: 1280px 100%;
+  }
+
+  .hero-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 600px;
+    padding: 80px 50px 0;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 563px;
+    padding-bottom: 50px;
+  }
+
+  .hero-title {
+    max-width: none;
+    font-size: 64px;
+    line-height: 68px;
+  }
+
+  .hero-social-proof {
+    margin-top: auto;
+    padding-top: 40px;
+  }
+
+  .hero-photographer {
+    flex-shrink: 0;
+    align-self: flex-end;
+    width: 397px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero::before {
+    background-image: url('../img/hero/grid-wide.svg');
+    background-size: 1440px 100%;
+  }
+
+  .hero-photographer {
+    margin-right: 50px;
+  }
+}

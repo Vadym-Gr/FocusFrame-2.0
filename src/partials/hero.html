@@ -1,6 +1,126 @@
-<section class="hero section" aria-labelledby="hero-title">
+<section class="hero" aria-labelledby="hero-title">
   <div class="container">
-    <h1 id="hero-title">Discover the magic of photography in our school</h1>
-    <!-- Hero content and styling will be implemented in stage 3. -->
+    <div class="hero-card">
+      <div class="hero-content">
+        <h1 class="hero-title" id="hero-title">
+          Discover the magic of <em>photography</em> in our school
+        </h1>
+        <p class="hero-description">
+          Our photography school offers an unforgettable journey, where you can
+          learn the basics of composition, master technical skills, translate
+          your unique ideas.
+        </p>
+        <div class="hero-social-proof">
+          <a class="hero-students" href="#reviews">
+            <span class="student-portraits" aria-hidden="true">
+              <picture
+                ><source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/hero/student-1.png    1x,
+                    ./img/hero/student-1@2x.png 2x
+                  "
+                  width="54"
+                  height="54" />
+                <img
+                  src="./img/hero/student-1-mobile.png"
+                  srcset="
+                    ./img/hero/student-1-mobile.png    1x,
+                    ./img/hero/student-1-mobile@2x.png 2x
+                  "
+                  alt=""
+                  width="44"
+                  height="44"
+              /></picture>
+              <picture
+                ><source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/hero/student-2.png    1x,
+                    ./img/hero/student-2@2x.png 2x
+                  "
+                  width="54"
+                  height="54" />
+                <img
+                  src="./img/hero/student-2-mobile.png"
+                  srcset="
+                    ./img/hero/student-2-mobile.png    1x,
+                    ./img/hero/student-2-mobile@2x.png 2x
+                  "
+                  alt=""
+                  width="44"
+                  height="44"
+              /></picture>
+              <picture
+                ><source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/hero/student-3.png    1x,
+                    ./img/hero/student-3@2x.png 2x
+                  "
+                  width="54"
+                  height="54" />
+                <img
+                  src="./img/hero/student-3-mobile.png"
+                  srcset="
+                    ./img/hero/student-3-mobile.png    1x,
+                    ./img/hero/student-3-mobile@2x.png 2x
+                  "
+                  alt=""
+                  width="44"
+                  height="44"
+              /></picture>
+            </span>
+            <span class="student-caption">
+              <span>Our happy students</span>
+              <img src="./img/hero/arrow.svg" alt="" width="18" height="9" />
+            </span>
+          </a>
+          <a
+            class="hero-reviews"
+            href="#reviews"
+            aria-label="Read our student reviews, more than 1500"
+          >
+            <span class="review-star"
+              ><img src="./img/hero/star.svg" alt="" width="20" height="20"
+            /></span>
+            <span class="review-caption"
+              ><span>Reviews</span><strong>+1500</strong></span
+            >
+          </a>
+        </div>
+      </div>
+      <picture class="hero-photographer">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/hero/photographer-desktop.png    1x,
+            ./img/hero/photographer-desktop@2x.png 2x
+          "
+          width="397"
+          height="520"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/hero/photographer-tablet.png    1x,
+            ./img/hero/photographer-tablet@2x.png 2x
+          "
+          width="393"
+          height="434"
+        />
+        <img
+          src="./img/hero/photographer-mobile.png"
+          srcset="
+            ./img/hero/photographer-mobile.png    1x,
+            ./img/hero/photographer-mobile@2x.png 2x
+          "
+          alt="Photography instructor holding a camera"
+          width="259"
+          height="314"
+          fetchpriority="high"
+        />
+      </picture>
+    </div>
   </div>
 </section>

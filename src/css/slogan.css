@@ -1,0 +1,39 @@
+.slogan {
+  display: flex;
+  justify-content: center;
+  padding-block: 19px;
+  overflow: hidden;
+  border-block: 1px solid var(--color-border);
+}
+
+.slogan p {
+  flex-shrink: 0;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color-accent);
+}
+
+.slogan span {
+  color: var(--color-text);
+}
+
+@media (min-width: 768px) {
+  .slogan {
+    padding-block: 23px;
+  }
+
+  .slogan p {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .slogan p {
+    font-size: 59px;
+    line-height: 64px;
+  }
+}
