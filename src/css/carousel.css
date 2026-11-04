@@ -1,0 +1,116 @@
+.card-carousel {
+  --cards-per-view: 1;
+  --card-gap: 20px;
+  position: relative;
+}
+
+.carousel-track {
+  display: grid;
+  grid-template-columns: repeat(var(--cards-per-view), minmax(0, 1fr));
+  gap: var(--card-gap);
+}
+
+.carousel-track > li {
+  min-width: 0;
+}
+
+.carousel-control {
+  display: none;
+}
+
+.is-enhanced .carousel-window {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.is-enhanced .carousel-window::-webkit-scrollbar {
+  display: none;
+}
+
+.is-enhanced .carousel-window:focus-visible {
+  outline-offset: 6px;
+}
+
+.is-enhanced .carousel-track {
+  display: flex;
+}
+
+.is-enhanced .carousel-track > li {
+  flex: 0 0
+    calc(
+      (100% - (var(--cards-per-view) - 1) * var(--card-gap)) /
+        var(--cards-per-view)
+    );
+  scroll-snap-align: start;
+}
+
+.is-enhanced .carousel-control {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 36px;
+  line-height: 1;
+  color: var(--color-accent);
+  background-color: transparent;
+  transform: translateY(-50%);
+  transition:
+    color var(--transition-duration) var(--transition-easing),
+    opacity var(--transition-duration) var(--transition-easing);
+}
+
+.carousel-previous {
+  left: -20px;
+}
+
+.carousel-next {
+  right: -20px;
+}
+
+.carousel-control:disabled {
+  opacity: 0.25;
+}
+
+.carousel-control:hover:not(:disabled) {
+  color: var(--color-text);
+}
+
+@media (min-width: 768px) {
+  .card-carousel {
+    --cards-per-view: 2;
+  }
+
+  .carousel-previous {
+    left: -32px;
+  }
+
+  .carousel-next {
+    right: -32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .card-carousel {
+    --cards-per-view: 3;
+  }
+
+  .is-enhanced .carousel-control {
+    width: 40px;
+  }
+
+  .carousel-previous {
+    left: -56px;
+  }
+
+  .carousel-next {
+    right: -56px;
+  }
+}
