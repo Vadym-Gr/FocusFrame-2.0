@@ -1,5 +1,19 @@
 # Vanilla App Template
 
+## Налаштування FocusFrame-2.0
+
+- Для локальної розробки та CI використовуй Node.js 24 і `npm ci`.
+- Команда `npm run build` збирає сайт із базовим шляхом `/FocusFrame-2.0/`.
+- Workflow `.github/workflows/deploy.yml` має дозвіл `contents: write` для
+  публікації в `gh-pages`; окремий персональний токен не потрібен.
+- Після першого успішного деплою відкрий `Settings` → `Pages` і вибери
+  `Deploy from a branch`, гілку `gh-pages`, папку `/ (root)`.
+- Адреса сайту після публікації: https://vadym-gr.github.io/FocusFrame-2.0/.
+- Для ручного повторного запуску відкрий `Actions` → `Build and deploy to
+  GitHub Pages` → `Run workflow` після завантаження цього workflow на GitHub.
+
+Нижче наведено загальну документацію вихідного шаблону.
+
 Цей проект було створено за допомогою Vite. Для знайомства та налаштування
 додаткових можливостей [звернись до документації](https://vitejs.dev/).
 
