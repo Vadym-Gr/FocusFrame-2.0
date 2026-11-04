@@ -10,8 +10,8 @@
     <meta name="theme-color" content="#121212" />
     <title>Focus.Frame — Photography School</title>
     <link rel="icon" type="image/svg+xml" href="/FocusFrame-2.0/favicon.svg" />
-    <script type="module" crossorigin src="/FocusFrame-2.0/assets/index-Dx6Ytq2Y.js"></script>
-    <link rel="stylesheet" crossorigin href="/FocusFrame-2.0/assets/index-7xK5JS4D.css">
+    <script type="module" crossorigin src="/FocusFrame-2.0/assets/index-rdp7IFC-.js"></script>
+    <link rel="stylesheet" crossorigin href="/FocusFrame-2.0/assets/index-Bl9g33Zi.css">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -467,9 +467,115 @@
   </div>
 </section>
 
-      <section class="section" id="sign-up" aria-labelledby="sign-up-title">
-  <div class="container">
-    <h2 id="sign-up-title">Sign Up</h2>
+      <section class="section sign-up" id="sign-up" aria-labelledby="sign-up-title">
+  <div class="container sign-up-layout">
+    <div class="sign-up-content">
+      <h2 class="section-title" id="sign-up-title">Sign <span>Up</span></h2>
+      <p class="sign-up-description" id="sign-up-description">
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
+      </p>
+      <form
+        class="sign-up-form"
+        aria-labelledby="sign-up-title"
+        aria-describedby="sign-up-description"
+        method="post"
+      >
+        <div class="sign-up-fields">
+          <div class="form-field">
+            <label class="visually-hidden" for="sign-up-name">Your name</label>
+            <input
+              class="form-control"
+              id="sign-up-name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              placeholder="Enter your name"
+              maxlength="100"
+              required
+              aria-describedby="sign-up-name-error"
+            />
+            <p class="form-error" id="sign-up-name-error" hidden></p>
+          </div>
+          <div class="form-field">
+            <label class="visually-hidden" for="sign-up-email"
+              >Your email</label
+            >
+            <input
+              class="form-control"
+              id="sign-up-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="Enter your email"
+              maxlength="254"
+              required
+              aria-describedby="sign-up-email-error"
+            />
+            <p class="form-error" id="sign-up-email-error" hidden></p>
+          </div>
+          <div class="form-field">
+            <label class="visually-hidden" for="sign-up-message"
+              >Your message</label
+            >
+            <textarea
+              class="form-control"
+              id="sign-up-message"
+              name="message"
+              placeholder="Message"
+              maxlength="2000"
+              required
+              aria-describedby="sign-up-message-error"
+            ></textarea>
+            <p class="form-error" id="sign-up-message-error" hidden></p>
+          </div>
+        </div>
+        <button class="sign-up-submit" type="submit" disabled>Send</button>
+        <p class="sign-up-privacy">
+          By clicking on “Send” button, you agree to our
+          <a
+            role="link"
+            aria-disabled="true"
+            tabindex="0"
+            aria-label="Privacy Policy, not available yet"
+            >Privacy Policy</a
+          >, and allow Promodo to use this information for marketing purposes.
+        </p>
+        <p
+          class="form-status"
+          id="sign-up-status"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+          tabindex="-1"
+        ></p>
+        <noscript
+          ><p class="form-status">
+            Form validation requires JavaScript. Sending is not available yet.
+          </p></noscript
+        >
+      </form>
+    </div>
+    <div class="sign-up-decoration" aria-hidden="true">
+      <div class="sign-up-lens">
+        <img
+          src="/FocusFrame-2.0/assets/lens-B7FTAodk.png"
+          alt=""
+          width="150"
+          height="142"
+          loading="lazy"
+        />
+      </div>
+      <div class="sign-up-camera">
+        <img
+          src="/FocusFrame-2.0/assets/camera-wa2K3mVs.png"
+          alt=""
+          width="240"
+          height="296"
+          loading="lazy"
+        />
+      </div>
+    </div>
   </div>
 </section>
 
