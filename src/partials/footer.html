@@ -1,3 +1,139 @@
-<footer class="footer" id="contacts">
-  <!-- Contacts, navigation and subscription will be implemented in stage 8. -->
+<footer class="footer" id="contacts" aria-label="Contacts and site information">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-identity">
+        <a
+          class="footer-logo"
+          href="./index.html"
+          aria-label="Focus.Frame home"
+        >
+          <picture
+            ><source
+              media="(min-width: 768px)"
+              srcset="./img/header/logo.svg" />
+            <img
+              src="./img/header/logo-mobile.svg"
+              alt="Focus.Frame"
+              width="127"
+              height="20"
+          /></picture>
+        </a>
+        <address class="footer-address">
+          <a href="tel:+380665438912">+38 066 543 8912</a>
+          <p>1678 S. Pioneer Road Salt Lake City UT 84104</p>
+        </address>
+      </div>
+      <div class="footer-links">
+        <ul class="footer-socials" aria-label="Social media">
+          <li>
+            <a
+              role="link"
+              aria-disabled="true"
+              tabindex="0"
+              aria-label="Instagram, not available yet"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              role="link"
+              aria-disabled="true"
+              tabindex="0"
+              aria-label="Facebook, not available yet"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              role="link"
+              aria-disabled="true"
+              tabindex="0"
+              aria-label="Youtube, not available yet"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-navigation">
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="#courses">Our courses</a></li>
+            <li><a href="#mentors">Our mentors</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+      <form
+        class="footer-subscription"
+        aria-label="Newsletter subscription"
+        method="post"
+      >
+        <div class="subscription-row">
+          <div class="subscription-field">
+            <label class="visually-hidden" for="subscription-email"
+              >Your email for the newsletter</label
+            >
+            <input
+              class="subscription-input"
+              id="subscription-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="Enter your email"
+              maxlength="254"
+              required
+              aria-describedby="subscription-email-error"
+            />
+          </div>
+          <button
+            class="subscription-submit"
+            type="submit"
+            aria-label="Subscribe to the newsletter"
+            disabled
+          >
+            Go
+          </button>
+        </div>
+        <p class="form-error" id="subscription-email-error" hidden></p>
+        <p
+          class="form-status"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+          tabindex="-1"
+        ></p>
+        <noscript
+          ><p class="form-status">
+            Form validation requires JavaScript. Subscriptions are not available
+            yet.
+          </p></noscript
+        >
+      </form>
+    </div>
+    <div class="footer-bottom">
+      <ul class="footer-legal">
+        <li>
+          <a
+            role="link"
+            aria-disabled="true"
+            tabindex="0"
+            aria-label="Privacy Policy, not available yet"
+            >Privacy Policy</a
+          >
+        </li>
+        <li>
+          <a
+            role="link"
+            aria-disabled="true"
+            tabindex="0"
+            aria-label="Public Offering Agreement, not available yet"
+            >Public Offering Agreement</a
+          >
+        </li>
+      </ul>
+      <p class="footer-copyright">
+        2024 Focus Frame<br />© All rights reserved
+      </p>
+    </div>
+  </div>
 </footer>
