@@ -1,5 +1,228 @@
-<section class="section" id="reviews" aria-labelledby="reviews-title">
+<section class="section reviews" id="reviews" aria-labelledby="reviews-title">
   <div class="container">
-    <h2 id="reviews-title">Reviews</h2>
+    <h2 class="section-title" id="reviews-title">Reviews</h2>
+    <div
+      class="card-carousel reviews-carousel"
+      data-carousel
+      role="group"
+      aria-roledescription="carousel"
+      aria-labelledby="reviews-title"
+    >
+      <button
+        class="carousel-control carousel-previous"
+        data-carousel-previous
+        type="button"
+        aria-label="Previous reviews"
+        aria-controls="review-cards"
+        disabled
+      >
+        <span aria-hidden="true">‹</span>
+      </button>
+      <div
+        class="carousel-window"
+        id="review-cards"
+        tabindex="0"
+        aria-label="Student reviews. Use Left and Right arrow keys to browse."
+      >
+        <ul class="carousel-track">
+          <li data-carousel-card>
+            <figure class="review-card">
+              <figcaption class="review-heading">
+                <div class="review-author">
+                  <img
+                    class="review-portrait"
+                    src="./img/reviews/abraham-baker.jpeg"
+                    srcset="
+                      ./img/reviews/abraham-baker.jpeg    1x,
+                      ./img/reviews/abraham-baker@2x.jpeg 2x
+                    "
+                    alt="Portrait of Abraham Baker"
+                    width="56"
+                    height="56"
+                    loading="lazy"
+                  />
+                  <div class="review-author-details">
+                    <h3>Abraham Baker</h3>
+                    <p>Student</p>
+                  </div>
+                </div>
+                <div
+                  class="review-rating"
+                  role="img"
+                  aria-label="4 out of 5 stars"
+                >
+                  <span class="review-rating-icons" aria-hidden="true"
+                    ><picture
+                      ><source
+                        media="(min-width: 768px)"
+                        srcset="./img/reviews/star.svg" />
+                      <img
+                        src="./img/reviews/star-mobile.svg"
+                        alt=""
+                        width="16"
+                        height="16"
+                    /></picture>
+                    <picture
+                      ><source
+                        media="(min-width: 768px)"
+                        srcset="./img/reviews/star.svg" />
+                      <img
+                        src="./img/reviews/star-mobile.svg"
+                        alt=""
+                        width="16"
+                        height="16"
+                    /></picture>
+                    <picture
+                      ><source
+                        media="(min-width: 768px)"
+                        srcset="./img/reviews/star.svg" />
+                      <img
+                        src="./img/reviews/star-mobile.svg"
+                        alt=""
+                        width="16"
+                        height="16"
+                    /></picture>
+                    <picture
+                      ><source
+                        media="(min-width: 768px)"
+                        srcset="./img/reviews/star.svg" />
+                      <img
+                        src="./img/reviews/star-mobile.svg"
+                        alt=""
+                        width="16"
+                        height="16"
+                    /></picture>
+                    <picture
+                      ><source
+                        media="(min-width: 768px)"
+                        srcset="./img/reviews/star-muted.svg" />
+                      <img
+                        src="./img/reviews/star-muted-mobile.svg"
+                        alt=""
+                        width="16"
+                        height="16" /></picture
+                  ></span>
+                </div>
+              </figcaption>
+              <blockquote>
+                <p>
+                  I am very pleased that I decided to enroll in photography
+                  school. The teachers turned out to be very talented and
+                  experienced professionals who share their knowledge and are
+                  dedicated to their work. I was able to expand my skills and
+                  discover my own style.
+                </p>
+              </blockquote>
+            </figure>
+          </li>
+          <li data-carousel-card>
+            <figure class="review-card">
+              <figcaption class="review-heading">
+                <div class="review-author">
+                  <img
+                    class="review-portrait"
+                    src="./img/reviews/amanda-lowery.jpeg"
+                    srcset="
+                      ./img/reviews/amanda-lowery.jpeg    1x,
+                      ./img/reviews/amanda-lowery@2x.jpeg 2x
+                    "
+                    alt="Portrait of Amanda Lowery"
+                    width="56"
+                    height="56"
+                    loading="lazy"
+                  />
+                  <div class="review-author-details">
+                    <h3>Amanda Lowery</h3>
+                    <p>Student</p>
+                  </div>
+                </div>
+                <div
+                  class="review-rating"
+                  role="img"
+                  aria-label="4 out of 5 stars"
+                >
+                  <span class="review-rating-icons" aria-hidden="true"
+                    ><picture
+                      ><source
+                        media="(min-width: 768px)"
+                        srcset="./img/reviews/star.svg" />
+                      <img
+                        src="./img/reviews/star-mobile.svg"
+                        alt=""
+                        width="16"
+                        height="16"
+                    /></picture>
+                    <picture
+                      ><source
+                        media="(min-width: 768px)"
+                        srcset="./img/reviews/star.svg" />
+                      <img
+                        src="./img/reviews/star-mobile.svg"
+                        alt=""
+                        width="16"
+                        height="16"
+                    /></picture>
+                    <picture
+                      ><source
+                        media="(min-width: 768px)"
+                        srcset="./img/reviews/star.svg" />
+                      <img
+                        src="./img/reviews/star-mobile.svg"
+                        alt=""
+                        width="16"
+                        height="16"
+                    /></picture>
+                    <picture
+                      ><source
+                        media="(min-width: 768px)"
+                        srcset="./img/reviews/star.svg" />
+                      <img
+                        src="./img/reviews/star-mobile.svg"
+                        alt=""
+                        width="16"
+                        height="16"
+                    /></picture>
+                    <picture
+                      ><source
+                        media="(min-width: 768px)"
+                        srcset="./img/reviews/star-muted.svg" />
+                      <img
+                        src="./img/reviews/star-muted-mobile.svg"
+                        alt=""
+                        width="16"
+                        height="16" /></picture
+                  ></span>
+                </div>
+              </figcaption>
+              <blockquote>
+                <p>
+                  The courses at the photography school exceeded all my
+                  expectations. I gained not only technical knowledge, but also
+                  inspiration and motivation to reach new heights in my
+                  creativity. Hands-on classes and workshops helped me
+                  understand different styles of photography.
+                </p>
+              </blockquote>
+            </figure>
+          </li>
+        </ul>
+      </div>
+      <button
+        class="carousel-control carousel-next"
+        data-carousel-next
+        type="button"
+        aria-label="Next reviews"
+        aria-controls="review-cards"
+        disabled
+      >
+        <span aria-hidden="true">›</span>
+      </button>
+      <p
+        class="visually-hidden"
+        data-carousel-status
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+    </div>
   </div>
 </section>
