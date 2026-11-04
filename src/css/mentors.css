@@ -1,0 +1,68 @@
+.mentors-carousel {
+  margin: 40px auto 0;
+}
+
+.mentor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 240px;
+  text-align: center;
+}
+
+.mentor-portrait {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #e0e0e0;
+}
+
+.mentor-card h3 {
+  max-width: 100%;
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: var(--font-weight-medium);
+  line-height: 24px;
+}
+
+.mentor-card p {
+  max-width: 100%;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  color: rgb(255 255 255 / 50%);
+}
+
+@media (min-width: 768px) {
+  .mentors-carousel {
+    --card-gap: 100px;
+    max-width: 488px;
+    margin-top: 50px;
+  }
+
+  .mentor-card {
+    min-height: 250px;
+  }
+
+  .mentor-card h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .mentor-card p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .mentors-carousel {
+    --cards-per-view: 4;
+    --card-gap: 80px;
+    max-width: 1034px;
+  }
+}

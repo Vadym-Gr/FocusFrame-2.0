@@ -1,5 +1,112 @@
-<section class="section" id="mentors" aria-labelledby="mentors-title">
+<section class="section mentors" id="mentors" aria-labelledby="mentors-title">
   <div class="container">
-    <h2 id="mentors-title">Our Mentors</h2>
+    <h2 class="section-title" id="mentors-title">Our <span>Mentors</span></h2>
+    <div
+      class="card-carousel mentors-carousel"
+      data-carousel
+      role="group"
+      aria-roledescription="carousel"
+      aria-labelledby="mentors-title"
+    >
+      <button
+        class="carousel-control carousel-previous"
+        data-carousel-previous
+        type="button"
+        aria-label="Previous mentors"
+        aria-controls="mentor-cards"
+        disabled
+      >
+        <span aria-hidden="true">‹</span>
+      </button>
+      <div
+        class="carousel-window"
+        id="mentor-cards"
+        tabindex="0"
+        aria-label="Mentor cards. Use Left and Right arrow keys to browse."
+      >
+        <ul class="carousel-track">
+          <li class="mentor-card" data-carousel-card>
+            <img
+              class="mentor-portrait"
+              src="./img/mentors/emilia-smith.png"
+              srcset="
+                ./img/mentors/emilia-smith.png    1x,
+                ./img/mentors/emilia-smith@2x.png 2x
+              "
+              alt="Portrait of Emilia Smith"
+              width="180"
+              height="180"
+              loading="lazy"
+            />
+            <h3>Emilia Smith</h3>
+            <p>1.5 years of experience</p>
+          </li>
+          <li class="mentor-card" data-carousel-card>
+            <img
+              class="mentor-portrait"
+              src="./img/mentors/alex-lebedev.png"
+              srcset="
+                ./img/mentors/alex-lebedev.png    1x,
+                ./img/mentors/alex-lebedev@2x.png 2x
+              "
+              alt="Portrait of Alex Lebedev"
+              width="180"
+              height="180"
+              loading="lazy"
+            />
+            <h3>Alex Lebedev</h3>
+            <p>3.5 years of experience</p>
+          </li>
+          <li class="mentor-card" data-carousel-card>
+            <img
+              class="mentor-portrait"
+              src="./img/mentors/mia-dubrovska.png"
+              srcset="
+                ./img/mentors/mia-dubrovska.png    1x,
+                ./img/mentors/mia-dubrovska@2x.png 2x
+              "
+              alt="Portrait of Mia Dubrovska"
+              width="180"
+              height="180"
+              loading="lazy"
+            />
+            <h3>Mia Dubrovska</h3>
+            <p>2.0 years of experience</p>
+          </li>
+          <li class="mentor-card" data-carousel-card>
+            <img
+              class="mentor-portrait"
+              src="./img/mentors/eliot-kovalev.png"
+              srcset="
+                ./img/mentors/eliot-kovalev.png    1x,
+                ./img/mentors/eliot-kovalev@2x.png 2x
+              "
+              alt="Portrait of Eliot Kovalev"
+              width="180"
+              height="180"
+              loading="lazy"
+            />
+            <h3>Eliot Kovalev</h3>
+            <p>4.0 years of experience</p>
+          </li>
+        </ul>
+      </div>
+      <button
+        class="carousel-control carousel-next"
+        data-carousel-next
+        type="button"
+        aria-label="Next mentors"
+        aria-controls="mentor-cards"
+        disabled
+      >
+        <span aria-hidden="true">›</span>
+      </button>
+      <p
+        class="visually-hidden"
+        data-carousel-status
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+    </div>
   </div>
 </section>
