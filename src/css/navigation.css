@@ -1,0 +1,24 @@
+.desktop-navigation .navigation-link[aria-current='location'],
+.footer-navigation a[aria-current='location'] {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
+.mobile-navigation .navigation-link[aria-current='location'] {
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
+.header-sign-up[aria-current='location'] {
+  color: var(--color-accent);
+  background-color: var(--color-surface);
+}
+
+.camera-link[aria-current='location'] {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

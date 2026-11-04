@@ -20,6 +20,7 @@
   --radius-card: 20px;
   --radius-pill: 1000px;
   --section-gap: 80px;
+  --header-height: 80px;
   --transition-duration: 200ms;
   --transition-easing: ease;
 }
