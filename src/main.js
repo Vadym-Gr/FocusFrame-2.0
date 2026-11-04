@@ -1,1 +1,3 @@
-// Initialize interactive sections here as they are implemented.
+import { initMobileMenu } from './js/mobile-menu.js';
+
+initMobileMenu();

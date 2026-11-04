@@ -1,3 +1,69 @@
 <header class="header" id="top">
-  <!-- Header and navigation will be implemented in stage 2. -->
+  <div class="container header-layout">
+    <div class="header-bar">
+      <a class="header-logo" href="./index.html" aria-label="Focus.Frame home">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/header/logo.svg" />
+          <img
+            src="./img/header/logo-mobile.svg"
+            alt="Focus.Frame"
+            width="127"
+            height="20"
+          />
+        </picture>
+      </a>
+      <nav class="desktop-navigation" aria-label="Main navigation">
+        <ul class="desktop-navigation-list">
+          <li><a class="navigation-link" href="#about-us">About us</a></li>
+          <li><a class="navigation-link" href="#courses">Our courses</a></li>
+          <li><a class="navigation-link" href="#mentors">Our mentors</a></li>
+          <li><a class="navigation-link" href="#reviews">Reviews</a></li>
+          <li><a class="navigation-link" href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a
+          class="camera-link"
+          href="#sign-up"
+          aria-label="Sign up for a photography course"
+        >
+          <img
+            class="camera-circle"
+            src="./img/header/camera-circle.svg"
+            alt=""
+            width="32"
+            height="32"
+          />
+          <img
+            class="camera-icon"
+            src="./img/header/camera.svg"
+            alt=""
+            width="16"
+            height="12"
+          />
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/header/menu-tablet.svg"
+            />
+            <img
+              src="./img/header/menu-mobile.svg"
+              alt=""
+              width="32"
+              height="22"
+            />
+          </picture>
+        </button>
+      </div>
+    </div>
+    <a class="header-sign-up" href="#sign-up">Sign up</a>
+  </div>
 </header>
